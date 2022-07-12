@@ -31,14 +31,14 @@ export default function Card() {
             </a>
             <div class="info-item__time">42 mins ago</div>
           </div>
-          <div class="item__actions actions-item">
+          {/* <div class="item__actions actions-item">
             <a href="" class="actions-item__link _icon-share">
               Share
             </a>
             <a href="" class="actions-item__link _icon-read">
               Read Later
             </a>
-          </div>
+          </div> */}
         </div>
       </article>
     </div>

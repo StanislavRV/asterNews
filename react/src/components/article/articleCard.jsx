@@ -55,14 +55,14 @@ export default function ArticleCard({ article, titleArticle, category, index }) 
             <div className="info-item__time">{startDate}</div>
           </div>
           <div className="item__actions actions-item">
-            <div className="actions-item__link ">
+            {/* <div className="actions-item__link ">
               <IconShare style={{ alignSelf: "center" }} className="icon_nav" />
               Share
             </div>
             <div className="actions-item__link ">
               <IconRead className="icon_nav" />
               Read Later
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
