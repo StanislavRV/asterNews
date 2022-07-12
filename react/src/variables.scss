@@ -1,0 +1,102 @@
+@use "sass:math";
+
+@import "./style/mixins.scss";
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+
+// @import "./style/fonts/fonts.scss";
+
+@import "./style/fonts/icons.scss";
+
+$fontFamily: "Roboto";
+$fontSize: rem(16);
+
+$mainColor: #072d4b; // Цвет шрифта по умолчанию
+$textColor: rgba(7, 46, 75, 0.6);
+$linkColor: #0768b5;
+
+
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1200;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 0;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 0;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ползунок скроллбара */
+// ::-webkit-scrollbar-thumb {
+//     background-color: $blue;
+//     border-radius: 9em;
+//     transition: all 0.4s;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background-color: $light;
+// }
+
+/* Стрелки */
+// ::-webkit-scrollbar-button:vertical:start:decrement {
+//     background: linear-gradient(120deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(240deg, $dark 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, $dark 30%, rgba(0, 0, 0, 0) 31%);
+//     background-color: $blue;
+// }
+
+// ::-webkit-scrollbar-button:vertical:end:increment {
+//     background: linear-gradient(300deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(60deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(180deg, $dark 30%, rgba(0, 0, 0, 0) 31%);
+//     background-color: $blue;
+// }
+
+// ::-webkit-scrollbar-button:horizontal:start:decrement {
+//     background: linear-gradient(30deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(150deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(270deg, $dark 30%, rgba(0, 0, 0, 0) 31%);
+//     background-color: $blue;
+// }
+
+// ::-webkit-scrollbar-button:horizontal:end:increment {
+//     background: linear-gradient(210deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(330deg, $dark 40%, rgba(0, 0, 0, 0) 41%),
+//         linear-gradient(90deg, $dark 30%, rgba(0, 0, 0, 0) 31%);
+//     background-color: $blue;
+// }

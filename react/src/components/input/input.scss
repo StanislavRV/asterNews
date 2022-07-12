@@ -1,0 +1,72 @@
+@import "../../variables.scss";
+
+.search {
+  position: relative;
+  z-index: 5;
+  height: rem(46);
+  width: 100%;
+
+  &__body {
+    flex: 1 1 auto;
+    // background: #ecf5f8;
+    height: rem(46);
+    border-radius: rem(4);
+    position: relative;
+    @media (max-width: em(429.98)) {
+      background: transparent;
+    }
+    .search__open & {
+      background: #ecf5f8;
+    }
+    
+  }
+  
+
+  &__input {
+  
+    @media (max-width: em(550)) {
+      display: none;
+    }
+    .search__open & {
+      display: block;
+    }
+  }
+
+  &__button {
+   
+    width: rem(46);
+    height: rem(46);
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: rem(18);
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (min-width: em(430)) {
+        display: block;       
+    }
+  }
+
+}
+
+.input {
+  width: 100%;
+  height: rem(46);
+  // background-color: transparent;
+  padding: 0 rem(46) 0 rem(14);
+  border: 1px solid rgba(7, 45, 75, 0.3);
+  border-radius: rem(3);
+  color: rgba(7, 45, 75, 0.3);
+  font-size: rem(14);
+  &:focus {
+    outline: none;
+    border: 2px solid $mainColor;
+    color: rgba(7, 45, 75, 1);
+  }
+}
+
+.svg:hover * {
+  fill: $linkColor;
+}

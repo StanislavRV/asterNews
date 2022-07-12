@@ -1,0 +1,73 @@
+@import "../../variables.scss";
+
+
+.rightSide {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+
+    @media (max-width: rem(900)) {
+        display: none;
+        }
+    .right_img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        border: 1px solid $linkColor;
+        margin-bottom: rem(20);
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+}
+
+
+
+
+.weather { 
+    display: block;
+    width: 100%;
+    border: 1px solid $linkColor;
+    margin-bottom: rem(20);
+    padding: rem(10);
+    &_body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &_sity { 
+        font-weight: 700;
+        text-align: center;
+        font-size: rem(24);
+        padding-left: rem(10);
+    }
+    &_main { 
+        font-weight: 700;
+        font-size: rem(18);
+    }    
+    &_temp { 
+        font-weight: 700;
+        font-size: rem(36);
+        >img {
+            width: 20px;
+            align-self: center;
+        }
+    }
+    &__img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        >img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+.weather_main{}
+.weather_temp{}
+.weather_status{}
+ 

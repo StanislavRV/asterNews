@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+
+.author_admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(20);
+    margin: rem(20) 0;
+    box-shadow: 0px rem(2) rem(12) rgba(0, 0, 0, 0.534);
+}

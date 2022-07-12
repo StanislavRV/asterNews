@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+
+
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+	padding: rem(10) rem(25);
+	background-color: #2F9FF8;
+	
+	border-radius: 4px;
+	font-size: rem(15);
+	text-align: center;
+	line-height: rem(18);
+	color: #fff;
+	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #2474b6;
+		}
+	}
+	&_min{
+		padding: rem(7) rem(20);
+	}
+	&_border{
+		background-color: transparent;
+		border: 1px solid #2F9FF8;
+		padding: rem(9) rem(20);
+		color: #2F9FF8;
+		@media (any-hover: hover){
+			&:hover{
+				color: #fff;
+				border: 1px solid #2474b6;
+			}
+		}
+	}
+	&_dark{
+		background-color: #0768B5;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #2F9FF8;
+			}
+		}
+	}
+	&_dark-border{
+		background-color: transparent;
+		border: 1px solid $mainColor;
+		color: $mainColor;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background-color: $mainColor;
+				border: 1px solid $mainColor;
+			}
+		}
+	}
+
+	&._fw {
+		width: 100%;
+	}
+
+	&:disabled {
+		opacity: .3;
+	}
+}
